@@ -12,11 +12,6 @@ html {
     height: -webkit-fill-available;
 }
 
-body {
-  max-height: -webkit-fill-available;
-  overflow: hidden;
-}
-
 h1::selection, h2::selection, a::selection {
     color: var(--color-5);
     background-color: var(--color-3);
@@ -39,8 +34,10 @@ a {
 }
 
 #root {
-    height: 100vh;
+    height: -webkit-fill-available;
     background-color: var(--color-5);
+    max-height: -webkit-fill-available;
+    overflow: hidden;
 }
 
 .top-left {
