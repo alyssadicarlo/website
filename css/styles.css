@@ -9,6 +9,11 @@
 
 html {
     font-size: 16px;
+    height: -webkit-fill-available;
+}
+
+body {
+    height: -webkit-fill-available;
 }
 
 h1::selection, h2::selection, a::selection {
