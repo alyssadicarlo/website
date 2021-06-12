@@ -13,7 +13,8 @@ html {
 }
 
 body {
-    height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
+  overflow: hidden;
 }
 
 h1::selection, h2::selection, a::selection {
