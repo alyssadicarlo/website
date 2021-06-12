@@ -55,7 +55,7 @@ a {
 }
 
 .flex-center {
-    height: 100vh;
+    height: -webkit-fill-available;
     display: flex;
     justify-content: center;
     align-items: center;
