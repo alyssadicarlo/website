@@ -59,6 +59,7 @@ a {
 }
 
 .flex-center {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,10 +146,6 @@ a {
     max-height: -webkit-fill-available;
   }
 
-  .flex-center {
-    height: -webkit-fill-available;
-  }
-
   .bottom-right {
     max-height: -webkit-fill-available;
   }
@@ -173,11 +170,7 @@ a {
   }
 }
 
-@supports not (height: -webkit-fill-available) and not (height: -moz-fil-available) {
-  .flex-center {
-    height: 100vh;
-    max-height: 100vh;
-  }
+@supports not (height: -webkit-fill-available)  {
 
   .bottom-right {
     max-height: 100vh;
