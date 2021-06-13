@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     resume.addEventListener('click', () => {
-        window.location.href = "assets/creative_resume.pdf";
+        window.open("assets/creative_resume.pdf", "_blank");
     });
 
     const vh = window.innerHeight * 0.01;
