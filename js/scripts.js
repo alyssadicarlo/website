@@ -19,7 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     resume.addEventListener('click', () => {
-        window.location.href = "assets/resume.pdf";
+        window.location.href = "assets/creative_resume.pdf";
+    });
+
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 
 })

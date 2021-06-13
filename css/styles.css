@@ -50,19 +50,24 @@ a {
     position: absolute;
     left: 0;
     top: 0;
+    height: 100vh; 
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .bottom-right {
     position: absolute;
     bottom: 0;
     right: 0;
+    max-height: 100vh;
+    max-height: calc(var(--vh, 1vh) * 100);
 }
 
 .flex-center {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh; 
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -137,46 +142,4 @@ a {
         width: 75px;
         height: 75px;
     }
-}
-
-@supports (height: -webkit-fill-available) {
-
-  #root {
-    height: -webkit-fill-available;
-    max-height: -webkit-fill-available;
-  }
-
-  .bottom-right {
-    max-height: -webkit-fill-available;
-  }
-
-  .top-left {
-    max-height: -webkit-fill-available;
-  }
-}
-
-@supports (height: -moz-fill-available) {
-  #root {
-    height: -moz-fill-available;
-    max-height: -moz-fill-available;
-  }
-
-  .bottom-right {
-    max-height: -moz-fill-available;
-  }
-
-  .top-left {
-    max-height: -moz-fill-available;
-  }
-}
-
-@supports not (height: -webkit-fill-available)  {
-
-  .bottom-right {
-    max-height: 100vh;
-  }
-
-  .top-left {
-    max-height: 100vh;
-  }
 }
