@@ -30,4 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
 
+    const nextButton = document.querySelector('#next');
+    const prevButton = document.querySelector('#prev');
+
+    nextButton.addEventListener('click', () => {
+      document.location.href = "projects.html"
+    });
+
+    prevButton.addEventListener('click', () => {
+      console.log("prev button clicked");
+    });
+
 })

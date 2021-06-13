@@ -1,0 +1,8 @@
+.card {
+  padding: 0!important;
+}
+
+.card * {
+  margin: 0!important;
+  padding: 10px;
+}
