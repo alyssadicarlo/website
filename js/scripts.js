@@ -2,24 +2,19 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const github = document.querySelector('#github');
-    const linkedin = document.querySelector('#linkedin');
-    const email = document.querySelector('#email');
-    const resume = document.querySelector('#resume');
+    const blog = document.querySelector('#blog');
+    const deskKit = document.querySelector('#desk-kit');
 
     github.addEventListener('click', () => {
         window.location.href = "https://github.com/alyssadicarlo/";
     });
 
-    linkedin.addEventListener('click', () => {
-        window.location.href = "https://www.linkedin.com/in/alyssa-dicarlo/";
+    blog.addEventListener('click', () => {
+        window.location.href = "https://techlyss.com";
     });
 
-    email.addEventListener('click', () => {
-        window.location.href = "mailto:alyssa.dicarlo@gmail.com";
-    });
-
-    resume.addEventListener('click', () => {
-        window.open("assets/creative_resume.pdf", "_blank");
+    deskKit.addEventListener('click', () => {
+        window.location.href = "https://kit.co/techlyss";
     });
 
     const vh = window.innerHeight * 0.01;
